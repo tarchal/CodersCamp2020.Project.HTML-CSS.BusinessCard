@@ -58,7 +58,7 @@ li a:visited{
     color: black;
 }
 
-.container img {
+.navi img {
     float: left;
     width: 20vw;
 }
@@ -83,6 +83,14 @@ li a:visited{
     padding-top: 66.66%;
     background-size: contain;
     margin-bottom: 1vh;
+    position: relative;
+}
+
+.box p{
+  margin:0;
+  padding:0;
+  position:absolute;
+  bottom:0;
 }
 
 .box1 {
@@ -115,15 +123,36 @@ li a:visited{
 
 #clients {
     background: white;
+    width: 100vw;
+    height: 25vh;
+}
+
+.logos img {
+    display: inline-block;
+    width: 15vw;
+    height: auto;
 }
 
 #contact {
+    height: 30vh;
     background: #f5f5f5;
+}
+
+input[type=submit] {
+    background-color: var(--color-yellow);
+    color: black;
+    border-radius: 10px;
+    border: none;
+    height: 2.5vh;
 }
 
 footer {
     background: black;
     color: white;
+}
+
+footer p {
+    text-align: center;
 }
   
 @media only screen and (min-width: 481px) {
@@ -136,7 +165,7 @@ footer {
         font-size: 2.5vh;
     }
 
-    .container img {
+    .navi img {
          width: 20vw;
     }
 
@@ -151,6 +180,7 @@ footer {
         width: 49vw;
         padding-top: calc(49vw*0.66);
     }
+
 }
   
 @media only screen and (min-width: 1025px) {
@@ -167,7 +197,11 @@ footer {
         padding-top: calc(32vw*0.66);
     }
 
-    .container img {
+    .navi img {
         width: 15vw;
+    }
+
+    .box:hover {
+        opacity: 0.5;
     }
 }
